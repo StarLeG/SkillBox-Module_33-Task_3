@@ -1,4 +1,5 @@
 #include "menu.h"
+#include "registry.h"
 
 
 int main()
@@ -7,6 +8,7 @@ int main()
 	menu();
 	std::cout << "Your choice: ";
 	std::cin >> input;
+	Registry<std::string, int> registry;
 
 	while (input != -1)
 	{
@@ -17,6 +19,8 @@ int main()
 			input = -1;
 			return 0;
 		case Command::ADD:
+
+
 			break;
 		case Command::FIND:
 			break;

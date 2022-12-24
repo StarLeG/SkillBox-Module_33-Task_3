@@ -1,0 +1,5 @@
+D:/SkillBox/Module 33/Task 3/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+D:/SkillBox/Module 33/Task 3/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
+D:/SkillBox/Module 33/Task 3/cmake-build-debug-mingw/src/CMakeFiles/Task_33_3.dir
+D:/SkillBox/Module 33/Task 3/cmake-build-debug-mingw/src/CMakeFiles/edit_cache.dir
+D:/SkillBox/Module 33/Task 3/cmake-build-debug-mingw/src/CMakeFiles/rebuild_cache.dir

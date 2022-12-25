@@ -4,36 +4,37 @@
 
 int main()
 {
-	int input = 0;
-	menu();
-	std::cout << "Your choice: ";
-	std::cin >> input;
-	Registry<std::string, int> registry;
-
-	while (input != -1)
+	Registry<std::string, int> MyReg;
+	Registry<int, std::string> MyReg_1;
+	try
 	{
-		switch (input)
-		{
-		case Command::EXIT :
-			std::cout << "BAY!" << std::endl;
-			input = -1;
-			return 0;
-		case Command::ADD:
+		MyReg.add("Apple", 10);
+		MyReg.add("Pear", 2);
+		MyReg.add("Pear", 12);
+		MyReg.add("Plum", 8);
+		MyReg.add("Peach", 7);
+		MyReg.print();
+		MyReg.print(MyReg.find("Plum"));
+		MyReg.print(MyReg.find("Orange"));
+		MyReg.remove("Plum");
+		MyReg.print();
 
 
-			break;
-		case Command::FIND:
-			break;
-		case Command::PRINT:
-			break;
-		case Command::REMOVE:
-			break;
-		default:
-			break;
-		}
-		menu();
-		std::cout << "Your choice: ";
-		std::cin >> input;
+		MyReg_1.add(1,"Apple");
+		MyReg_1.add(2,"Pear");
+		MyReg_1.add(3,"Plum");
+		MyReg_1.add(4,"Peach");
+		MyReg_1.print();
+
+
+
+
+
+	}
+	catch (std::invalid_argument& ex)
+	{
+		std::cerr << "Invalid argument " << ex.what() << std::endl;
 	}
 	return 0;
 }
+
